@@ -26,4 +26,3 @@ expenses = st.number_input("Annual Expenses (₹):", min_value=0, value=25200, s
 if st.button("Calculate"):
     years, balances = calculate_years_to_retirement(income, expenses, savings_rate, annual_return, withdrawal_rate, initial_balance)
     st.write(f"You can retire in approximately {years} years.")
-
